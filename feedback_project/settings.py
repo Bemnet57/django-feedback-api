@@ -36,7 +36,9 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
+#ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = ["django-feedback-api-1.onrender.com", "localhost", "127.0.0.1"]
+
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Application definition
