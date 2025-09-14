@@ -116,14 +116,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": [
-        "rest_framework.authentication.SessionAuthentication",
-        "rest_framework.authentication.BasicAuthentication",
-    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": [],  #  disables login completely
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.AllowAny",  #  make public by default
+        "rest_framework.permissions.AllowAny",
     ],
 }
+
 
 
 # Internationalization
@@ -149,3 +147,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ACCOUNT_USERNAME_BLACKLIST = ['admin']
+
+SWAGGER_SETTINGS = {
+    "USE_SESSION_AUTH": False,   #  disables Django login button
+    "LOGIN_URL": None,
+    "LOGOUT_URL": None,
+}
