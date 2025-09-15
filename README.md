@@ -13,10 +13,10 @@ A mini project to collect and manage user feedback using Django and Django REST 
 - Django 4
 - Django REST Framework
 
-## 🔧 Installation
+## 🔧 Installation and Getting Started
 
 ```bash
-git clone https://github.com/yourusername/django-feedback-api.git
+git clone https://github.com/Bemnet57/django-feedback-api.git
 cd django-feedback-api
 pip install -r requirements.txt
 python manage.py migrate
